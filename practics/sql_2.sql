@@ -5,4 +5,4 @@ SELECT
        WHEN "Orders".inDelivery THEN 1
        ELSE 0
   END
-FROM "Orders"
+FROM "Orders";
