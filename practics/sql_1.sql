@@ -5,4 +5,4 @@ FROM "Orders"
 JOIN "Couriers" ON "Couriers".id = "Orders".courierId
 WHERE
   "Orders".inDelivery
-GROUP BY 1
+GROUP BY 1;
