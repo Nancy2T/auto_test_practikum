@@ -1,8 +1,8 @@
 SELECT
   "Couriers".login,
   COUNT(*)
-FROM "Orders" 
-JOIN "Couriers" ON "Couriers".id = "Orders".courierId
+FROM "Couriers" 
+LEFT JOIN "Orders" ON "Orders".courierId = "Couriers".id 
 WHERE
   "Orders".inDelivery
-GROUP BY 1;
+GROUP BY "Couriers".login;
